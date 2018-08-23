@@ -44,7 +44,7 @@ namespace ImageToBase64
 
                     FileInfo f = new FileInfo(ofd.FileName);
 
-                    Save(Application.StartupPath + "\\" + "INSERT_" + f.Name.Replace(f.Extension, string.Empty) + ".SQL",
+                    Save(Application.StartupPath + "\\" + "UPDATE_" + f.Name.Replace(f.Extension, string.Empty) + ".SQL",
                           "UPDATE eventos SET imagem64 = '" + base64 + "' WHERE idEvento = " + txtIDEvento.Text);
 
                     txtIDEvento.Text = string.Empty;
